@@ -1,4 +1,4 @@
-def Solution(matrix: list[list[int]]) -> bool:
+def solution(matrix: list[list[int]]) -> bool:
     n = len(matrix)
     row_list = []
     rule = [x for x in range(1, n + 1)]
@@ -20,4 +20,3 @@ def Solution(matrix: list[list[int]]) -> bool:
     print(col)
     return all(set(column) == set(rule) for column in col)
 
-print(Solution([[1,2,3],[2,3,1],[3,1,2]]))
