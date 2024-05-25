@@ -10,9 +10,8 @@ def solution(matrix: list[list[int]]) -> bool:
             return False
         row_list.clear()
 
-    col = [[] for _ in range(len(matrix[0]))]
+    col: list[list[int]] = [[] for _ in range(len(matrix[0]))]
 
-    print(col)
     for i in range(n):
         for j in range(n):
             col[j].append(matrix[i][j])
