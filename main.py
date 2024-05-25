@@ -7,9 +7,9 @@ def get_matrix_solution() -> list[list[int]]:
     return matrix
 
 def get_user_input(rows: int,columns: int) -> list[list[int]]:
-    matrix = [[] for i in range(rows)
-    for i in range(len(rows)):
-        for j in range(len(columns)):
+    matrix = [[] for i in range(rows)]
+    for i in range(rows):
+        for j in range(columns):
             element: int = int(input("Enter the {}{}th element in the matrix".format(i+1,j+1)))
             matrix[i].append(element)
     return matrix
